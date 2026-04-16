@@ -181,14 +181,6 @@ t: experiment
 - Check that all referenced MP3 files exist
 - Verify stimulus list format matches expected columns
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## License
-
-This project is provided as-is for academic and research purposes.
-
 ## Acknowledgments
 
 This application generates experiments for [PsyToolkit](https://www.psytoolkit.org/), created by Pr. Gijsbert Stoet. If you use experiments created with this tool, please cite PsyToolkit according to their [citation guidelines](https://www.psytoolkit.org/faq.html#citations).
