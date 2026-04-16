@@ -4,7 +4,7 @@ A Shiny application for designing audio perception experiments compatible with [
 
 If you use the code and/or the Shiny app for your research, please cite:
 
-Audibert, N. (to appear). DYE (Design Your Experiment) : une interface graphique en ligne pour la conception d’évaluation perceptives avec PsyToolkit. Actes des 36èmes Journées d'Études sur la Parole (JEP 2026), Juin 2026, Montpellier, France.
+> Audibert, N. (to appear). DYE (Design Your Experiment) : une interface graphique en ligne pour la conception d’évaluation perceptives avec PsyToolkit. Actes des 36èmes Journées d'Études sur la Parole (JEP 2026), Juin 2026, Montpellier, France.
 
 ## ⚠️ Important Notice
 
