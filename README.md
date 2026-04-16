@@ -148,6 +148,8 @@ For experiments requiring controlled stimulus presentation:
 3. Import the ZIP in the Audio Files tab
 4. Each participant will be randomly assigned one order
 
+You might consider using [MILP_Randomizer](https://github.com/nicolasaudibert/MILP_Randomizer) to generate pseudo-random orders from a list of stimuli and a set of constraints.
+
 ## Running from a PsyToolkit Survey
 
 To embed the experiment in a survey, add to your survey code:
