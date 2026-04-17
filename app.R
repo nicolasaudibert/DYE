@@ -51,6 +51,9 @@ DEFAULT_CHOICE_TIMEOUT <- 10000
 DEFAULT_AUDIO_LOOP <- FALSE
 DEFAULT_AUDIO_TIMEOUT <- 10000
 
+# Header file displayed below the app title
+HTML_HEADER_FILE <- file.path("www", "DYE_header.html")
+
 # -----------------------------------------------------------------------------
 # UI Definition
 # -----------------------------------------------------------------------------
@@ -59,6 +62,8 @@ ui <- fluidPage(
   
   # Application title
   titlePanel("DYE (Design Your Experiment) - PsyToolkit Listening Test Designer"),
+  
+  htmlOutput("headerHTMLtext"),
   
   # Project controls at the top
   mod_project_ui("project"),
@@ -283,6 +288,14 @@ server <- function(input, output, session) {
     export_images,
     project_name = reactive({ input$`project-project_name` })
   )
+  
+  # ---------------------------------------------------------------------------
+  # HTML header displayed on top of the page (contents loaded from file)
+  # ---------------------------------------------------------------------------
+  output$headerHTMLtext <- renderUI({
+    displayedHTML = readLines(HTML_HEADER_FILE)
+    HTML(paste(displayedHTML))
+  })
   
   # ---------------------------------------------------------------------------
   # Sync left tabs with preview page
